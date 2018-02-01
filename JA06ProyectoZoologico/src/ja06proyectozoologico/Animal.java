@@ -14,13 +14,15 @@ public class Animal {
     String paisOrigen=null;
     double peso;
     int edad;
+    String nombreCientifico= null;
     
     
-    Animal(String nombre, String paisOrigen, double peso, int edad){
+    Animal(String nombre, String paisOrigen, double peso, int edad, String nombreCientifico){
         this.nombre=  nombre;
         this.paisOrigen= paisOrigen;
         this.peso= peso;
         this.edad= edad;
+        this.nombreCientifico= nombreCientifico;
     }
     
     void imprimeAnimal(){
@@ -29,6 +31,7 @@ public class Animal {
         System.out.println("Pais de origen: "+this.paisOrigen);
         System.out.println("Peso: "+this.peso);
         System.out.println("Edad: "+this.edad);
+        System.out.println("Nombre cientifico: "+this.nombreCientifico);
         System.out.println("--------------------");
     }
 
@@ -45,6 +48,10 @@ public class Animal {
     }
     public int getEdad() {
         return edad;
+    }
+    
+    public String getNombreCientifico(){
+        return nombreCientifico;
     }
     
     
